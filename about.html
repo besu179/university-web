@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav> 
+            <a href="index.html">
+                <img src="Assets/img/logo.png" alt="">
+            </a>
+            <div class="nav-links"  id="navLinks">
+                <ul>
+                    <img src="Assets/PNG/close.png" alt="" style="height: 20px; width: 20px; padding: 10px; color: white;" onclick="hideMenu()" class="fa">
+                    <li>
+                        <a href="index.html">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="courses.html">COURSE</a>
+                        <a href="blog.html">BLOG</a>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="Assets/PNG/menu.png" style="height: 25px; width: 25px;" alt="" onclick="showMenu()" class="fa">
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!--- About us  --->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are The World's Largest University</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, distinctio velit. Ipsam, quis nobis reprehenderit, eaque sed consequuntur odio autem assumenda veniam id deleniti eos modi, necessitatibus fuga animi similique?</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="Assets/img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-----Footer----->
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat sed repellendus quae <br> reiciendis? Sit dolor sapiente iure adipisci hic excepturi quod ut animi maxime! Maxime eum maiores magnam incidunt!</P>
+    <div class="icons">
+        <img src="Assets/PNG/facebook.png" alt="" style="height: 20px;">
+        <img src="Assets/PNG/telegram.png" alt="" style="height: 20px;">
+        <img src="Assets/PNG/twitter.png" alt="" style="height: 20px;">
+        <img src="Assets/PNG/play_store.png" alt="" style="height: 20px;">
+    </div>
+</section>
+
+<!--A javascript code for responsiveness in small screens-->
+
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
